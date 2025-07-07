@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.links:hover{
+    @apply text-light-text;
+    transition: margin-top;
+}

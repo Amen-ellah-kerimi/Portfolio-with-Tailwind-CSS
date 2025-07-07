@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body class="bg-dark-bg text-primary-text font-sans min-h-screen flex flex-col">
+    <!-- Header (optional: add if you want navigation here too) -->
+    <header class="flex justify-between items-center py-6 px-4 sm:px-6 lg:px-8 mb-10">
+        <div class="flex items-center gap-2">
+            <img src="/public/icons/Style=Default.svg" alt="Logo" class="w-5 h-5" />
+            <span class="font-mono font-bold text-light-text text-xl">Amen</span>
+        </div>
+        <nav class="flex items-center gap-8 text-base font-mono lowercase">
+            <a href="Home.html" class="hover:text-accent-purple transition">#home</a>
+            <a href="Projects.html" class="hover:text-accent-purple transition">#projects</a>
+            <a href="About.html" class="hover:text-accent-purple transition">#about-me</a>
+            <a href="contacts.html" class="text-accent-purple font-bold">#contacts</a>
+            <div class="relative group">
+                <button class="flex items-center gap-1 hover:text-accent-purple transition">EN <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+            </div>
+            <button class="theme-toggle-btn ml-4 p-2 rounded border border-border-accent bg-card-bg hover:border-accent-purple transition" title="Toggle theme">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 4.95l-.71-.71M4.05 4.93l-.71-.71"/></svg>
+            </button>
+        </nav>
+    </header>
+    <main class="flex-1 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        <!-- Main Section -->
+        <section class="mb-12 reveal-on-scroll">
+            <h1 class="text-3xl font-mono font-bold text-accent-purple mb-2">#contacts</h1>
+            <p class="font-mono text-secondary-text mb-4">Who am I?</p>
+            <p class="font-mono text-primary-text mb-10">I'm interested in internship opportunities. However, if you have any other request or question, don't hesitate to contact me.</p>
+            <!-- Contact Card -->
+            <div class="bg-card-bg border border-border-accent rounded-lg p-8 flex flex-col items-center shadow-card-glow max-w-md mx-auto reveal-on-scroll">
+                <h2 class="font-mono text-xl font-bold text-accent-purple mb-2">Message me here</h2>
+                <a href="mailto:amenellah.kerimi@fsb.ucar.tn" class="copy-email font-mono text-light-text text-lg mb-2 hover:underline">amenellah.kerimi@fsb.ucar.tn</a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full flex flex-col md:flex-row justify-between items-center gap-4 px-4 sm:px-8 py-6 text-secondary-text font-mono text-sm border-t border-border-accent bg-dark-bg mt-8">
+        <div class="flex flex-col items-center md:items-start">
+            <div class="flex items-center gap-2 mb-1">
+                <img src="/public/icons/Style=Default.svg" alt="Logo" class="w-4 h-4" />
+                <span class="font-bold text-light-text">Amen Ellah</span>
+            </div>
+            <a href="mailto:amenellah.kerimi@fsb.ucar.tn" class="copy-email hover:underline text-secondary-text">amenellah.kerimi@fsb.ucar.tn</a>
+            <span class="text-xs text-accent-purple mt-1">Full-Stack & AI Enthusiast</span>
+        </div>
+        <div class="flex flex-col items-center md:items-end gap-2">
+            <div class="flex gap-4 mb-1">
+                <a href="https://github.com/Amen-ellah-kerimi" target="_blank" rel="noopener" title="GitHub"><img src="/public/icons/Github.svg" class="w-5 h-5" alt="GitHub" /></a>
+                <a href="https://www.linkedin.com/in/amen-ellah-kerimi-354a85286" target="_blank" rel="noopener" title="LinkedIn"><img src="/public/icons/Linkedin.svg" class="w-5 h-5" alt="LinkedIn" /></a>
+            </div>
+            <span class="text-xs">&copy; Copyright 2025. Made by Amen Ellah.</span>
+        </div>
+    </footer>
+</body>
+</html>
