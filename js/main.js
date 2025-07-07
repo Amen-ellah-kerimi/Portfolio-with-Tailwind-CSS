@@ -73,7 +73,6 @@ function setupCopyEmail() {
 // === Init All ===
 document.addEventListener('DOMContentLoaded', () => {
   createScrollUpBtn();
-  setupThemeToggle();
   setupTypingHero();
   setupRevealOnScroll();
   setupCopyEmail();
