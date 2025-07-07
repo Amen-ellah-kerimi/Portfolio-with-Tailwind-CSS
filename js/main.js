@@ -13,16 +13,6 @@ function createScrollUpBtn() {
   });
 }
 
-// 2. Theme Toggle (Dark/Light Mode)
-function setupThemeToggle() {
-  const btn = document.querySelector('.theme-toggle-btn');
-  if (!btn) return;
-  btn.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    // Optionally, swap icon SVG here
-  });
-}
-
 // 3. Animated Typing Effect (for hero title)
 function setupTypingHero() {
   const el = document.querySelector('.typing-hero');
