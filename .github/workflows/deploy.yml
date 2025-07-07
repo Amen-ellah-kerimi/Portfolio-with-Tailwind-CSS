@@ -1,0 +1,39 @@
+# .github/workflows/deploy.yml
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # This workflow will run every time you push to the 'main' branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Use the latest Ubuntu environment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Action to check out your repository code
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Specify your Node.js version (e.g., '18', '20', '22')
+          cache: 'npm' # Cache npm dependencies for faster builds
+
+      - name: Install dependencies
+        run: npm install # Install all project dependencies
+
+      - name: Build project
+        run: npm run build # Run your Vite build command
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # A popular action for deploying to GH Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub's built-in token for authentication
+          publish_dir: ./dist # Tell the action to publish the 'dist' folder
+          # If you want to deploy to a specific subfolder on GitHub Pages URL (e.g., /my-portfolio)
+          # cname: your-custom-domain.com # Uncomment and set if you have a custom domain
+          # If you have a multi-page app and want to use client-side routing (e.g., React Router)
+          # without hash mode, you might need to copy index.html to 404.html
+          # cp dist/index.html dist/404.html # Uncomment if needed for SPA routing
