@@ -37,7 +37,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist/
           # If you have a multi-page app and want to use client-side routing (e.g., React Router)
           # without hash mode, you might need to copy index.html to 404.html
           # cp dist/index.html dist/404.html # Uncomment if needed for SPA routing
