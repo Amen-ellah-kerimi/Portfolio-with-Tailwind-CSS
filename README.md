@@ -39,11 +39,13 @@ portfolio/
 │   ├── icons/         # Icônes SVG et PNG (réseaux, UI, décorations)
 │   └── vite.svg       # Logo Vite
 │
-├── pages/             # Pages HTML (Home, About, Projects, Contacts)
-│
 ├── js/
 │   └── main.js        # Script principal (animations, scroll, copier email...)
 │
+├── index.html         # Page d'accueil
+├── About.html         # Page À propos
+├── Projects.html      # Page Projets
+├── contacts.html      # Page Contacts
 ├── style.css          # Fichier CSS principal (inclut Tailwind)
 ├── tailwind.config.js # Config Tailwind CSS
 ├── postcss.config.js  # Config PostCSS

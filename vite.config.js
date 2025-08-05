@@ -6,10 +6,10 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                home: resolve(__dirname, 'pages/index.html'),
-                about: resolve(__dirname, 'pages/About.html'),
-                contacts: resolve(__dirname, 'pages/contacts.html'),
-                projects: resolve(__dirname, 'pages/Projects.html'),
+                home: resolve(__dirname, 'index.html'),
+                about: resolve(__dirname, 'About.html'),
+                contacts: resolve(__dirname, 'contacts.html'),
+                projects: resolve(__dirname, 'Projects.html'),
             },
         },
     },
